@@ -38,7 +38,9 @@ function hoverEffect() {
   });
   divArray.forEach((value) => {
     value.addEventListener("mouseout", () => {
-      value.style = `background-color: white;`;
+      setTimeout(() => {
+        value.style = `background-color: white;`;
+      }, 500);
     });
   });
 }
